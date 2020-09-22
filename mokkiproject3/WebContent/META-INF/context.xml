@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+<Resource name="jdbc/SchoolDB" auth="Container"
+type="javax.sql.DataSource"
+maxActive="10" maxIdle="30" maxWait="10000"
+username="e1401190" password="5CedHtdmk7Yy"
+driverClassName="com.mysql.cj.jdbc.Driver"
+url="jdbc:mysql://mysql.cc.puv.fi:3306/e1401190_javapalvelin?serverTimezone=UTC" />
+
+<Realm className="org.apache.catalina.realm.DataSourceRealm"
+   dataSourceName="jdbc/SchoolDB"
+   localDataSource="true"
+   userTable="users" userNameCol="user_name" userCredCol="user_pass"
+   userRoleTable="user_roles" roleNameCol="role_name"/>
+   
+</Context>
